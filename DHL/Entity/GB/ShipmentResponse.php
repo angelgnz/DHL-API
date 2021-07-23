@@ -197,8 +197,8 @@ class ShipmentResponse extends Base
             'subobject' => true,
             'multivalues' => true,
         ), 
-        'BarCodes' => array(
-            'type' => 'BarCodes',
+        'Barcodes' => array(
+            'type' => 'Barcodes',
             'required' => false,
             'subobject' => true,
             'multivalues' => false,
@@ -323,7 +323,7 @@ class ShipmentResponse extends Base
             'type' => 'LabelImage',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
         'CustData' => array(
             'type' => 'string',
             'required' => false,
@@ -331,6 +331,13 @@ class ShipmentResponse extends Base
             'comment' => 'CustData',
             'minLength' => '1',
             'maxLength' => '100',
+        ),
+
+        'Label' => array( 
+            'type' => 'Label', 
+            'required' => false, 
+            'subobject' => true, 
+            'comment' => 'Label', 
         ),
         'LabelTemplate' => array( 
             'type' => 'LabelTemplate', 
