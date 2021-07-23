@@ -82,6 +82,6 @@ class Contact extends Base
             'subobject' => false,
             'comment' => 'Email address containing \'@\'',
             'maxLength' => '50',
-        ), 
+        ),
     );
 }
