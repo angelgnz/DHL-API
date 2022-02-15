@@ -115,7 +115,12 @@ class ShipmentInfo extends Base
             'type' => 'string',
             'required' => false,
             'subobject' => false,
-        ), 
+        ),
+        'ShipmentEvent' => array(
+            'type' => 'ShipmentEvent',
+            'required' => false,
+            'subobject' => true,
+        ),
         'DlvyNotificationFlag' => array(
             'type' => '',
             'required' => false,

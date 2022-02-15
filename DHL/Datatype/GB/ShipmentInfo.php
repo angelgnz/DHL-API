@@ -76,7 +76,7 @@ class ShipmentInfo extends Base
             'type' => 'dateTime',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
         'Pieces' => array(
             'type' => 'Piece',
             'required' => false,
@@ -87,7 +87,7 @@ class ShipmentInfo extends Base
             'type' => 'string',
             'required' => false,
             'subobject' => false,
-        ), 
+        ),
         'WeightUnit' => array(
             'type' => '',
             'required' => false,

@@ -22,7 +22,7 @@
  * @version     0.1
  */
 
-namespace DHL\Entity\EA; 
+namespace DHL\Entity\EA;
 use DHL\Entity\Base;
 
 /**
@@ -57,22 +57,44 @@ class TrackingResponse extends Base
             'type' => 'Response',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
         'AWBInfo' => array(
             'type' => 'AWBInfo',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
+        'ShipmentInfo' => array(
+            'type' => 'ShipmentInfo',
+            'required' => false,
+            'subobject' => true,
+        ),
+        'ShipmentDesc' => array(
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false,
+        ),
         'Fault' => array(
             'type' => 'Fault',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
         'LanguageCode' => array(
             'type' => 'string',
             'required' => false,
             'subobject' => false,
             'comment' => 'ISO Language Code',
-        ), 
+        ),
+        'DlvyNotificationFlag' => array(
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'ISO Language Code',
+        ),
+        'ShipmentEvent' => array(
+            'type' => 'ShipmentEvent',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'ISO Language Code',
+        ),
     );
 }
