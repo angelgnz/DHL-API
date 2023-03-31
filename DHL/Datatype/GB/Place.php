@@ -57,10 +57,24 @@ class Place extends Base
             'comment' => 'Name of company / business',
             'minLength' => '0',
             'maxLength' => '35',
-        ), 
-        'AddressLine' => array(
+        ),
+        'AddressLine1' => array(
             'type' => 'AddressLine',
-            'required' => true,
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'Address Line',
+            'maxLength' => '35',
+        ),  
+        'AddressLine2' => array(
+            'type' => 'AddressLine',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'Address Line',
+            'maxLength' => '35',
+        ),  
+        'AddressLine3' => array(
+            'type' => 'AddressLine',
+            'required' => false,
             'subobject' => false,
             'comment' => 'Address Line',
             'maxLength' => '35',

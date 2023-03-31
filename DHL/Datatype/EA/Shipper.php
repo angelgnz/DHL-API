@@ -62,8 +62,22 @@ class Shipper extends Base
             'comment' => 'DHL Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
-        ), 
-        'AddressLine' => array(
+        ),
+        'AddressLine1' => array(
+            'type' => 'AddressLine',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'Address Line',
+            'maxLength' => '35',
+        ),  
+        'AddressLine2' => array(
+            'type' => 'AddressLine',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'Address Line',
+            'maxLength' => '35',
+        ),  
+        'AddressLine3' => array(
             'type' => 'AddressLine',
             'required' => false,
             'subobject' => false,
